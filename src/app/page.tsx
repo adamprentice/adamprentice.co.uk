@@ -1,18 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import "./page.scss";
+import Contact from "@/components/Contact";
+import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
+import Mentoring from "@/components/Mentoring";
+import Resume from "@/components/Resume";
+import Services from "@/components/Services";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Adam Prentice</h1>
-      <h2>Intro</h2>
-      <h2>What can I help you with?</h2>
-      <h2>
-        <Link href="/resume">Resume</Link>
-      </h2>
-      <h2>
-        <Link href="/mentoring">Mentoring</Link>
-      </h2>
+    <main className="items-center justify-center">
+      <Navbar />
+      <Hero />
+      <Intro />
+      <Services />
+      <Resume />
+      <Mentoring />
+      <Contact />
     </main>
   );
 }
