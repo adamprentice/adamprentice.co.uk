@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     // Handle form submission
     alert("Form submitted!");
